@@ -163,53 +163,53 @@ This section provides the single variable analysis of various columns in datafra
 
 * **From the bar graph it is clear that most of clients were contacted first time. Value 999 denotes that client was never contacted previously.**
 
-![pdays](./barplot pdays_count.png)
+![pdays](./barplot_pdays_count.png)
 
 * **From this bar plot, we can see that most of the clients were contacted first time.**
 
-![previous contacts](./barplot previous_contact.png)
+![previous contacts](./barplot_previous_contact.png)
 
 * **Below 5 graphs are social indicators and doesn't depict much information here.**
 
-![variability_rate](./barplot variability_rate.png)
-![cpi](./barplot cpi.png)
-![consumer_confidence](./barplot consumer_confidence.png)
+![variability_rate](./barplot_variability_rate.png)
+![cpi](./barplot_cpi.png)
+![consumer_confidence](./barplot_consumer_confidence.png)
 ![plot8](./plot8.png)
-![nr_employed](./barplot nr_employed.png)
+![nr_employed](./barplot_nr_employed.png)
 
 * **Below 3 graphs shows the distribution of job type, marital status and education level. Permanent job people, married and high education clients were contacted more.**
 
 ![job](./barplot job.png)
-![marital_status](./barplot marital_status.png)
-![education_level](./barplot education_level.png)
+![marital_status](./barplot_marital_status.png)
+![education_level](./barplot_education_level.png)
 
 * **Cleints with credit defaults were not contacted most of the times as we can see only count as 3.**
 
-![default_status](./barplot default_status.png)
+![default_status](./barplot_default_status.png)
 
 * **Not very high difference between clients who has housing loan or who doesn't have but clients with housing loan were contacted more.**
 
-![housing_loan](./barplot housing_loan.png)
+![housing_loan](./barplot_housing_loan.png)
 
 * **Clients with no personal loan are preferred**
 
-![personal_loan](./barplot personal_loan.png)
+![personal_loan](./barplot_personal_loan.png)
 
 * **More number of clients were called on cellular phones instead of telephone.**
 
-![communication_type](./barplot communication_type.png)
+![communication_type](./barplot_communication_type.png)
 
 * **Very less number of clients were called in September, October, December and March.**
 
-![contacted_month](./barplot contacted_month.png)
+![contacted_month](./barplot_contacted_month.png)
 
 * **Almost uniform distributions of clients across the days of the week.**
 
-![day_of_week](./barplot day_of_week.png)
+![day_of_week](./barplot_day_of_week.png)
 
 * **Most of the clients were called whose previous outcome doesn't exists. This is because most clients were new and have never been called before.**
 
-![previous_outcome](./barplot previous_outcome.png)
+![previous_outcome](./barplot_previous_outcome.png)
 
 ### Relationship between Features and outcome variable y
 In this section, I will analyze the relationship between features and outcome variable y. Function `crosstab_plot(variable1, variable2, title, filename, ylabel = "ratio")` is used for this. This function implement following steps:
@@ -221,67 +221,67 @@ In this section, I will analyze the relationship between features and outcome va
 Following is the analysis of various plots of crosstab:
 * **We can see from the following plot that success ratio is higher for the clients with age below 25 and above 60. In the mid age group success ratio is less. So this feature can be made a categorical variable and looks impacting the outcome.**
 
-![age_vs_y](./crosstab age_vs_y.png)
+![age_vs_y](./crosstab_age_vs_y.png)
 
 * **Success ratio among retired and students are higher as compared to other professions.**
 
-![job_vs_y](./crosstab job_vs_y.png)
+![job_vs_y](./crosstab_job_vs_y.png)
 
 * **Not very high difference among the success ratios of different relationship types but it seems success ratio of Singles and unknowns are comparatively high.**
 
-![marital_status_vs_y](./crosstab marital_status_vs_y.png)
+![marital_status_vs_y](./crosstab_marital_status_vs_y.png)
 
 * **Success ratio is higher for illiterate but sample size is very small. There is not strong correlation between success and client education but it seems higher the education better are the chances for success.**
 
-![education_vs_y](./crosstab education_vs_y.png)
+![education_vs_y](./crosstab_education_vs_y.png)
 
 * **Sample size for credit in default clients is very less but it seems who haven't defaulted are having higher success then the one whose values are not known.**
 
-![crosstab default_vs_y](./crosstab default_vs_y.png)
+![crosstab default_vs_y](./crosstab_default_vs_y.png)
 
 * **Those who have housing loan have relatively higher success ratio.**
 
-![crosstab housing_loan_vs_y](./crosstab housing_loan_vs_y.png)
+![crosstab housing_loan_vs_y](./crosstab_housing_loan_vs_y.png)
 
 * **Those who doesn't have personal loan have relatively higher success ratio.**
 
-![crosstab personal_loan_vs_y](./crosstab personal_loan_vs_y.png)
+![crosstab personal_loan_vs_y](./crosstab_personal_loan_vs_y.png)
 
 * **Clients who were called on cellular phones are having higher success ratio then who were called on telephone.**
 
-![crosstab communication_type_vs_y](./crosstab communication_type_vs_y.png)
+![crosstab communication_type_vs_y](./crosstab_communication_type_vs_y.png)
 
 * **Clients who were called in Sep, Oct, Dec and Mar have higher success ratio but number clients called during these months were less as compared to other months.**
 
-![crosstab contact_month_vs_y](./crosstab contact_month_vs_y.png)
+![crosstab contact_month_vs_y](./crosstab_contact_month_vs_y.png)
 
 * **No clear difference among the success ratio of the clients who were called on particular day of week.**
 
-![crosstab day_week_vs_y](./crosstab day_week_vs_y.png)
+![crosstab day_week_vs_y](./crosstab_day_week_vs_y.png)
 
 * **With increasing number of contacts during this campaign success ratio is decreasing.**
 
-![crosstab number_of_contacts_vs_y](./crosstab number_of_contacts_vs_y.png)
+![crosstab number_of_contacts_vs_y](./crosstab_number_of_contacts_vs_y.png)
 
 * **There is no clear dependency on number of days client was contacted before this contact and success ratio. Most of the clients were not contacted before.**
 
-![crosstab pdays_vs_y](./crosstab pdays_vs_y.png)
+![crosstab pdays_vs_y](./crosstab_pdays_vs_y.png)
 
 * **Till number of times previously contacted is increasing success ratio is also higher between 2 to 6 times contact but sample size of this is very small as most of the clients were contacted first time.**
 
-![crosstab previous_contact_vs_y](./crosstab previous_contact_vs_y.png)
+![crosstab previous_contact_vs_y](./crosstab_previous_contact_vs_y.png)
 
 * **if previous contact outcome was success then there is higher of success during this time as well but most of the clients were contacted first time.**
 
-![crosstab prev_comp_outcome_vs_y](./crosstab prev_comp_outcome_vs_y.png)
+![crosstab prev_comp_outcome_vs_y](./crosstab_prev_comp_outcome_vs_y.png)
 
 * **Below 5 graphs are social indicators and usually don't affect as these are not individual indicators. So we will not consider these values while working on this data set.**
 
-![crosstab emp_var_vs_y](./crosstab emp_var_vs_y.png)
-![crosstab cpi_vs_y](./crosstab cpi_vs_y.png)
-![crosstab cci_vs_y](./crosstab cci_vs_y.png)
-![crosstab euribor_vs_y](./crosstab euribor_vs_y.png)
-![crosstab employee_no_vs_y](./crosstab employee_no_vs_y.png)
+![crosstab emp_var_vs_y](./crosstab_emp_var_vs_y.png)
+![crosstab cpi_vs_y](./crosstab_cpi_vs_y.png)
+![crosstab cci_vs_y](./crosstab_cci_vs_y.png)
+![crosstab euribor_vs_y](./crosstab_euribor_vs_y.png)
+![crosstab employee_no_vs_y](./crosstab_employee_no_vs_y.png)
 
 ## Data Pre-processing
 This section will be used for data preprocessing and feature engineering as there is no conclusive evidence of any relationship of various features and outcome.
@@ -353,7 +353,7 @@ Following is the pipeline for model selection:
 
 We have following plot for various classifiers performance on data.
 
-![evaluation initial](./evaluation initial.png)
+![evaluation initial](./evaluation_initial.png)
 
 ### Best classifier selection
 * We have tried 6 classifer as stated earlier.
@@ -440,7 +440,7 @@ Following is the confusion matrix:
 ## Checking time requirements on reduced data set
 Finally I plotted time and accuracy on reduced data set. We can clearly see reduced data set has reduce training and prediction time drastically without compromise much on accuracy.
 
-![evaluation reduced_data](./evaluation reduced_data.png)
+![evaluation reduced_data](./evaluation_reduced_data.png)
 
 ## Further Improvements
 There is always scope of improving a model and same is true with final model as well.
